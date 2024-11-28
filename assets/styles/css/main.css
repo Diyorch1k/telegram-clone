@@ -1,0 +1,113 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  background: url("../../images/bg.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.main .sidebar {
+  width: 420px;
+  height: 100%;
+  background-color: #212121;
+  padding-left: 13px;
+}
+.main .sidebar .header {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  padding-right: 30px;
+  gap: 10px;
+}
+.main .sidebar .sidebar-toggler {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+.main .sidebar .sidebar-toggler img {
+  width: 30px;
+  height: 30px;
+}
+.main .sidebar .search-field {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  background-color: #181818;
+  -ms-border-radius: 50px;
+  flex: 1;
+  -o-border-radius: 50px;
+  border: 1px solid #2f2f2f;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+}
+.main .sidebar .search-field img {
+  width: 20px;
+  height: 20px;
+}
+.main .sidebar .search-field input {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+}
+.main .sidebar .profiles {
+  overflow: scroll;
+}
+.main .sidebar .profiles .wrapper {
+  width: max-content;
+  display: flex;
+  gap: 8px;
+}
+.main .sidebar .profiles .wrapper .profile {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main .sidebar .folders {
+  margin: 8px;
+}
+.main .sidebar .folders .folder {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.main .sidebar .folders .folder:hover {
+  background-color: #2f2f2f;
+}
+.main .sidebar .chats .chat {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+.main .sidebar .chats .chat:hover {
+  background-color: #2f2f2f;
+}
+.main .sidebar .chats .chat .chat__image {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.view {
+  overflow: scroll;
+}
